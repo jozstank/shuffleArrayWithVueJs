@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shuffle Array</title>
+  </head>
+  <body>
+    <div id="app">
+      <ul>
+        <li v-for="(fruit,index) in fruits" :key="fruit.id">
+          <input type="checkbox" />
+          {{fruit.name}}
+        </li>
+      </ul>
+      <button @click="shuffle">Shuffle Array</button>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
